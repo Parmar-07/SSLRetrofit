@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+apply from: 'maven-push.gradle'
 
 android {
     compileSdkVersion 29
@@ -7,7 +7,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -22,6 +22,23 @@ android {
 
 }
 
+/*publishing {
+    publications {
+        myPulication(MavenPublication) {
+            groupId 'ssl.hanshake.retofit'
+            version '1.0.0'
+            artifactId 'ssl_retrofit'
+            artifact("$buildDir/outputs/aar/ssl_retrofit-release.aar")
+        }
+    }
+
+    repositories {
+        maven {
+            url "https://github.com/Parmar-07/SSLRetrofit"
+        }
+    }
+}*/
+
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
 
@@ -29,3 +46,5 @@ dependencies {
 
 
 }
+
+
