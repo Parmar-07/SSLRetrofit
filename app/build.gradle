@@ -4,6 +4,10 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.google.firebase.firebase-perf'
+
 buildscript {
     repositories {
         jcenter()
@@ -40,13 +44,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation project(path: ':ssl_retrofit')
-
+//    implementation project(path: ':ssl_retrofit')
+    implementation 'com.github.Parmar-07:SSLRetrofit:1.1.3'
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.3'
 
     implementation 'br.com.simplepass:loading-button-android:1.14.0'
 
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-perf'
 
 }

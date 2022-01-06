@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "191182549029",
+    "project_id": "ticketssdk-f0d0f",
+    "storage_bucket": "ticketssdk-f0d0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191182549029:android:98da5ca4674c8d92468fcc",
+        "android_client_info": {
+          "package_name": "ssl.hanshake.retrofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191182549029-a4e6eipq2tklnuvg6krrhdu03hc38b74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAffSn_ocxK2NJ_YsmhVFyT5vHgnK0lhEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191182549029-a4e6eipq2tklnuvg6krrhdu03hc38b74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
